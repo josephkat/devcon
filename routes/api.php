@@ -3,16 +3,15 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
+use Api\Http\Controllers\AuthController;
+use Api\Http\Controllers\BilletController;
+use Api\Http\Controllers\DocController;
+use Api\Http\Controllers\FoundAndLostController;
+use Api\Http\Controllers\ReservationController;
+use Api\Http\Controllers\UnitController;
+use Api\Http\Controllers\UserController;
+use Api\Http\Controllers\WarningController;
+use Api\Http\Controllers\WallController;
 
 Route::get('/get', function() {
     return ['pong'=>true];
