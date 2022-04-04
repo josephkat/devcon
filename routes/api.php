@@ -13,7 +13,7 @@ use Api\Http\Controllers\UserController;
 use Api\Http\Controllers\WarningController;
 use Api\Http\Controllers\WallController;
 
-Route::get('/get', function() {
+Route::get('/ping', function() {
     return ['pong'=>true];
 });
 
